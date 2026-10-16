@@ -5,7 +5,7 @@ Texts for the add-on's page. The name comes from the manifest.
 ## Summary (English, ≤ 250 characters)
 
 RTL support for Thunderbird: Hebrew, Arabic and other right-to-left text in
-the right direction. Received RTL mail that arrived left-aligned is fixed
+the right direction. RTL mail that arrived left-aligned is fixed
 automatically as you read, and each paragraph you write takes its direction
 (RTL or LTR) from its words.
 
