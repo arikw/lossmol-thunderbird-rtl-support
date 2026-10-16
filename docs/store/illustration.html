@@ -1,0 +1,30 @@
+<!doctype html>
+<!-- Before/after of Lossmol's reading fix, for the store page. Serve the project
+     folder over HTTP and capture this page at 1280×800. -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Lossmol — reading, before and after</title>
+  <style>
+    html, body { margin: 0; height: 100%; background: #f3f4f6; font-family: "Segoe UI", Arial, sans-serif; }
+    .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; padding: 20px; box-sizing: border-box; height: 100%; }
+    .pane { display: flex; flex-direction: column; min-height: 0; }
+    .cap { font-size: 15px; font-weight: 600; color: #374151; margin: 0 0 8px; display: flex; justify-content: space-between; }
+    .cap span:last-child { font-weight: 400; color: #6b7280; }
+    .pane.after .cap { color: #0f766e; }
+    iframe { flex: 1; border: 1px solid #d1d5db; border-radius: 8px; background: #fff; width: 100%; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="pane">
+      <div class="cap"><span>As it arrived</span><span>כפי שהגיעה</span></div>
+      <iframe src="sample.html"></iframe>
+    </div>
+    <div class="pane after">
+      <div class="cap"><span>With Lossmol</span><span>עם Lossmol</span></div>
+      <iframe src="sample.html?fix"></iframe>
+    </div>
+  </div>
+</body>
+</html>
