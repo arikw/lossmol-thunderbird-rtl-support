@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- The compose button while the caret's paragraph runs left to right. -->
+  <rect x="1" y="1" width="30" height="30" rx="7" fill="#0f766e"/>
+  <g stroke="#fff" stroke-width="2.8" stroke-linecap="round">
+    <line x1="7" y1="9.5" x2="24.5" y2="9.5"/>
+    <line x1="7" y1="14" x2="18.5" y2="14"/>
+    <line x1="7" y1="18.5" x2="22" y2="18.5"/>
+    <line x1="7" y1="23" x2="16" y2="23"/>
+  </g>
+</svg>

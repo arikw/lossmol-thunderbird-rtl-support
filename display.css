@@ -1,0 +1,8 @@
+/* Lossmol — displayed messages: blocks marked by display.js. An English block
+   inside a right-to-left one (ours or the sender's) is set back. A flipped
+   list item keeps its bullet inside it, on the right, since the list's indent
+   is still on the left. */
+[data-lossmol="rtl"] { direction: rtl !important; text-align: right !important; }
+[data-lossmol="rtl"] [data-lossmol="ltr"],
+[dir="rtl"] [data-lossmol="ltr"] { direction: ltr !important; text-align: left !important; }
+li[data-lossmol="rtl"] { list-style-position: inside !important; }

@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Lossmol</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <section>
+    <h2 data-i18n="optionsComposeTitle"></h2>
+    <p class="row">
+      <label for="composeDefault" data-i18n="optionsComposeDefault"></label>
+      <select id="composeDefault">
+        <option value="auto" data-i18n="optionsComposeDefaultAuto"></option>
+        <option value="rtl" data-i18n="optionsComposeDefaultRtl"></option>
+        <option value="ltr" data-i18n="optionsComposeDefaultLtr"></option>
+      </select>
+    </p>
+    <p class="row">
+      <input type="checkbox" id="composeAuto">
+      <label for="composeAuto" data-i18n="optionsComposeAuto"></label>
+    </p>
+    <p class="hint" data-i18n="optionsComposeShortcuts"></p>
+    <p class="row">
+      <input type="checkbox" id="sendHtml">
+      <label for="sendHtml" data-i18n="optionsSendHtml"></label>
+    </p>
+  </section>
+  <section>
+    <h2 data-i18n="optionsDisplayTitle"></h2>
+    <p class="row">
+      <input type="checkbox" id="displayFix">
+      <label for="displayFix" data-i18n="optionsDisplayFix"></label>
+    </p>
+  </section>
+  <p class="hint" data-i18n="optionsNote"></p>
+  <script src="options.js"></script>
+</body>
+</html>

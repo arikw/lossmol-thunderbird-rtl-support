@@ -1,0 +1,10 @@
+# Built packages
+dist/
+*.xpi
+*.zip
+
+# OS / editor clutter
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

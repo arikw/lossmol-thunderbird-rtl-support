@@ -1,0 +1,42 @@
+<!doctype html>
+<!-- Sample received messages, to try display.js in a browser (open as a file). -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Lossmol — display test</title>
+  <link rel="stylesheet" href="../display.css">
+  <style>body { font-family: sans-serif; } .msg { border: 1px solid #ccc; margin: 12px; padding: 8px; }</style>
+  <script>globalThis.browser = { storage: { local: { get: async () => ({}) }, onChanged: { addListener() {} } } };</script>
+</head>
+<body>
+<div class="msg" id="outlook">
+  <div class="WordSection1">
+    <p dir="ltr" style="text-align:left">שלום רב, מצורף הדוח שביקשת.</p>
+    <p dir="ltr" style="text-align:left">Please see the attached report.</p>
+    <p dir="ltr"><img alt="" width="1" height="1"></p>
+  </div>
+</div>
+<div class="msg" id="plain">
+  <div class="moz-text-plain"><pre wrap="" class="moz-quote-pre">שלום,
+זהו מכתב בטקסט פשוט, שורה אחרי
+שורה, כמו שתאנדרבירד מציג אותו.
+
+Second paragraph, in English this time,
+also wrapped at a fixed width.
+
+תודה,
+אריק
+</pre></div>
+</div>
+<div class="msg" id="flowed">
+  <div class="moz-text-flowed">שורה ראשונה בעברית<br>Second line in English<br><br>שורה אחרונה<br></div>
+</div>
+<div class="msg" id="nested">
+  <div dir="rtl"><p>פסקה בעברית בתוך הודעה שכבר מימין לשמאל</p><p>An English paragraph inside it</p></div>
+  <ul><li>פריט ראשון</li><li>second item</li></ul>
+</div>
+<script src="../lib/direction.js"></script>
+<script src="../lib/blocks.js"></script>
+<script src="../display.js"></script>
+</body>
+</html>

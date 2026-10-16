@@ -1,0 +1,32 @@
+<!doctype html>
+<!-- A stand-in for Thunderbird's compose editor, to try compose.js in a
+     browser: the body is editable, `browser` is stubbed, and the commands can
+     be sent with `lossmol.run({command, dir})` from the console. Open it as a
+     file; nothing is served or installed. -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Lossmol — compose test</title>
+  <script>
+    globalThis.browser = {
+      storage: {
+        local: { get: async () => ({ settings: globalThis.testSettings || {} }) },
+        onChanged: { addListener() {} },
+      },
+      runtime: { onMessage: { addListener(fn) { globalThis.onMessage = fn; } } },
+    };
+  </script>
+</head>
+<body contenteditable="true">
+<p><br></p>
+<div class="moz-signature">-- <br>Best regards,<br>Dana</div>
+<div class="moz-cite-prefix">On 14/10/2026 10:00, Someone wrote:</div>
+<blockquote type="cite">
+<p>Hello, could you send me the report?</p>
+<p dir="ltr">שלום, אפשר לקבל את הדוח?</p>
+</blockquote>
+<script src="../lib/direction.js"></script>
+<script src="../lib/blocks.js"></script>
+<script src="../compose.js"></script>
+</body>
+</html>

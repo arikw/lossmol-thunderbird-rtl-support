@@ -1,0 +1,50 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_extName__",
+  "description": "__MSG_extDescription__",
+  "version": "0.1.2",
+  "author": "arikw",
+  "homepage_url": "https://github.com/arikw/lossmol-thunderbird-rtl-support",
+  "default_locale": "en",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "lossmol@arikw.github.io",
+      "strict_min_version": "128.0",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    }
+  },
+  "permissions": [
+    "compose",
+    "messagesRead",
+    "scripting",
+    "storage",
+    "menus"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "compose_action": {
+    "default_title": "__MSG_composeActionTitle__",
+    "default_label": "",
+    "default_icon": "icons/lossmol.svg",
+    "default_area": "formattoolbar"
+  },
+  "message_display_action": {
+    "default_title": "__MSG_displayActionTitle__",
+    "default_label": "",
+    "default_icon": "icons/lossmol.svg"
+  },
+  "options_ui": {
+    "page": "options/options.html"
+  },
+  "icons": {
+    "48": "icons/lossmol.svg",
+    "96": "icons/lossmol.svg"
+  }
+}
