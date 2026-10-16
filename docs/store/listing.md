@@ -5,21 +5,30 @@ Texts for the add-on's page. The name comes from the manifest.
 ## Summary (English, ≤ 250 characters)
 
 RTL support for Thunderbird: Hebrew, Arabic and other right-to-left text in
-the right direction. Each paragraph takes its direction (RTL or LTR) from
-its words, Ctrl + Shift switches it by hand, and left-aligned RTL messages
-are re-aligned when read.
+the right direction. Received RTL mail that arrived left-aligned is fixed
+automatically as you read it, and while you write each paragraph takes its
+direction (RTL or LTR) from its words.
 
 ## Summary (Hebrew)
 
 תמיכת RTL ל‑Thunderbird: עברית, ערבית ושאר שפות ימין־לשמאל בכיוון הנכון.
-כל פסקה שכותבים מקבלת את כיוונה (RTL או LTR) לפי המילים שבה, Ctrl + Shift
-מחליף אותו ידנית, והודעות RTL שהגיעו מיושרות לשמאל מוצגות מימין לשמאל.
+דואר RTL שהגיע מיושר לשמאל מתוקן אוטומטית בזמן הקריאה, ובכתיבה כל פסקה
+מקבלת את כיוונה (RTL או LTR) לפי המילים שבה.
 
 ## Description (English)
 
-Right-to-left (RTL) support for Thunderbird: writing and reading mail in
-Hebrew, Arabic and the other RTL scripts, with left-to-right (LTR) text in
-the same message left alone.
+Right-to-left (RTL) support for Thunderbird, for mail you receive and mail
+you write, in Hebrew, Arabic and the other RTL scripts, with left-to-right
+(LTR) text in the same message left alone.
+
+**Reading: fixed automatically.** RTL messages whose Hebrew or Arabic
+arrived left-aligned, a common result of Outlook and web forms, are shown
+right to left the moment you open them, paragraph by paragraph, with nothing
+to click: a mixed RTL/LTR message comes out right in both directions.
+Plain-text messages too. A message written with direction in mind is left as
+its author set it. The Lossmol button in the message header shows whether
+anything was re-aligned and switches the message you're reading back to the
+way it arrived; right-click it for the setting itself.
 
 **Writing.** Each paragraph takes its direction from its words as you type:
 mostly Hebrew (or Arabic), RTL; an English paragraph in the same message
@@ -35,14 +44,6 @@ by hand stays as you set it.
 
 A setting chooses the direction a new message starts in.
 
-**Reading.** RTL messages whose Hebrew or Arabic arrived left-aligned, a
-common result of Outlook and web forms, are shown right to left, paragraph
-by paragraph, so a mixed RTL/LTR message comes out right in both directions. Plain-text
-messages too. A message written with direction in mind is left as its author
-set it. The Lossmol button in the message header shows whether anything was
-re-aligned and switches the message you're reading back to the way it
-arrived; right-click it for the setting itself.
-
 **Sending.** Thunderbird's "Automatic" sending format would drop paragraph
 directions by sending plain text; Lossmol sends such messages as HTML with a
 plain-text copy.
@@ -53,8 +54,15 @@ source and issues at https://github.com/arikw/lossmol-thunderbird-rtl-support.
 
 ## Description (Hebrew)
 
-תמיכת ימין־לשמאל (RTL) ל‑Thunderbird: כתיבה וקריאה של דואר בעברית, בערבית
-ובשאר שפות ה‑RTL, כשטקסט משמאל לימין (LTR) באותה הודעה נשאר במקומו.
+תמיכת ימין־לשמאל (RTL) ל‑Thunderbird, לדואר שמקבלים ולדואר שכותבים, בעברית,
+בערבית ובשאר שפות ה‑RTL, כשטקסט משמאל לימין (LTR) באותה הודעה נשאר במקומו.
+
+**קריאה: תיקון אוטומטי.** הודעות RTL שהעברית או הערבית שבהן הגיעו מיושרות
+לשמאל, תוצאה נפוצה של Outlook ושל טפסים באינטרנט, מוצגות מימין לשמאל ברגע
+שפותחים אותן, פסקה־פסקה, בלי ללחוץ על כלום: הודעה מעורבת RTL/LTR יוצאת
+נכון בשני הכיוונים. גם הודעות בטקסט פשוט. הודעה שנכתבה עם מחשבה על כיוון
+נשארת כפי שכותבה קבע. כפתור Lossmol בכותרת ההודעה מראה אם משהו יושר מחדש
+ומחזיר את ההודעה הנוכחית לצורה שבה הגיעה; קליק ימני עליו מגיע להגדרה עצמה.
 
 **כתיבה.** כל פסקה מקבלת את כיוונה לפי המילים שבה תוך כדי הקלדה: רוב עברית
 (או ערבית), RTL; פסקה באנגלית באותה הודעה נשארת LTR. הכיוון
@@ -67,13 +75,6 @@ Shift שמאלי** למשמאל לימין, כמו ב‑Word וב‑Windows. כ�
 נשארת כפי שנקבעה.
 
 הגדרה קובעת באיזה כיוון הודעה חדשה מתחילה.
-
-**קריאה.** הודעות RTL שהעברית או הערבית שבהן הגיעו מיושרות לשמאל, תוצאה
-נפוצה של Outlook ושל טפסים באינטרנט, מוצגות מימין לשמאל, פסקה־פסקה, כך
-שהודעה מעורבת RTL/LTR יוצאת נכון בשני הכיוונים. גם הודעות בטקסט פשוט. הודעה שנכתבה עם
-מחשבה על כיוון נשארת כפי שכותבה קבע. כפתור Lossmol בכותרת ההודעה מראה אם
-משהו יושר מחדש ומחזיר את ההודעה הנוכחית לצורה שבה הגיעה; קליק ימני עליו
-מגיע להגדרה עצמה.
 
 **שליחה.** מצב השליחה "אוטומטי" של Thunderbird היה מוחק את כיווני הפסקאות
 בשליחה כטקסט פשוט; Lossmol שולח הודעות כאלה כ‑HTML עם עותק בטקסט פשוט.
