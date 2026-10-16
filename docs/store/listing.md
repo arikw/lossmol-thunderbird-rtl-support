@@ -5,9 +5,9 @@ Texts for the add-on's page. The name comes from the manifest.
 ## Summary (English, ≤ 250 characters)
 
 RTL support for Thunderbird: Hebrew, Arabic and other right-to-left text in
-the right direction. Each paragraph you type takes its direction (RTL or
-LTR) from its words, Ctrl + Shift switches it by hand, and received RTL
-messages that arrived left-aligned are re-aligned.
+the right direction. Each paragraph takes its direction (RTL or LTR) from
+its words, Ctrl + Shift switches it by hand, and left-aligned RTL messages
+are re-aligned when read.
 
 ## Summary (Hebrew)
 
