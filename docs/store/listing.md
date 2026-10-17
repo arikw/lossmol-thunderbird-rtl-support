@@ -4,16 +4,16 @@ Texts for the add-on's page. The name comes from the manifest.
 
 ## Summary (English, ≤ 250 characters)
 
-Right-to-left (RTL) mail done right in Thunderbird. Hebrew and Arabic
-messages that arrive left-aligned are fixed automatically as you read them,
-and every paragraph you write gets the correct direction, RTL or LTR, from
-its own words.
+Ensures mail containing RTL text, such as Hebrew or Arabic, is shown
+correctly paragraph by paragraph according to dominant language. In
+addition, lets you compose mail with automatic paragraph direction applied
+as you write.
 
 ## Summary (Hebrew)
 
-דואר מימין לשמאל (RTL) כמו שצריך ב‑Thunderbird. הודעות בעברית ובערבית שהגיעו
-מיושרות לשמאל מתוקנות אוטומטית בזמן הקריאה, וכל פסקה שאתם כותבים מקבלת את
-הכיוון הנכון, RTL או LTR, לפי המילים שלה.
+מציג הודעות עם כיווניות נכונה לכל פסקה לפי שפתה השלטת, כך שטקסט בשפות RTL,
+כמו עברית וערבית, מוצג כראוי. כמו כן, מאפשר לכתוב הודעות עם כיוון פסקאות
+אוטומטי שנקבע לפי השפה השלטת תוך כדי הקלדה.
 
 ## Description (English)
 
