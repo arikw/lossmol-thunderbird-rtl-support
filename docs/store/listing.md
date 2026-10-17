@@ -91,12 +91,19 @@ https://github.com/arikw/lossmol-thunderbird-rtl-support.
 - Homepage and support site: the GitHub repository (issues).
 - Privacy policy: none needed (no data collected; the manifest declares it).
 
-## Screenshots
+## Images
 
-`illustration.html` (serve the project folder over HTTP, open it at
-1280×560) renders `sample.html` twice, as it arrived and with Lossmol's
-reading scripts; `reading-before-after.png` is that capture. The rest come
-from a real Thunderbird window, 1280×800 or larger:
+Made from the HTML pages here (serve the project folder over HTTP, open the
+page in a browser at 1280×800 and capture the viewport):
+
+- `icon-128.png` ← `icon.html`: the add-on icon for the store (it scales it
+  to 64×64).
+- `reading-before-after.png` ← `illustration.html`: `sample.html` twice, as
+  it arrived and with Lossmol's reading scripts.
+- `writing.png` ← `writing.html`: a message with each paragraph on its own
+  side, the toolbar button and the shortcuts.
+
+The rest come from a real Thunderbird window, 1280×800 or larger:
 
 1. Compose window: a Hebrew paragraph, an English paragraph under it, each
    on its own side, the Lossmol button visible in the formatting toolbar.

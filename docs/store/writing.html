@@ -1,0 +1,84 @@
+<!doctype html>
+<!-- How writing looks with Lossmol, for the store page: each paragraph on its
+     own side, the toolbar button following the cursor, the shortcuts. Serve the
+     project folder over HTTP and capture this page at 1280×800. -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Lossmol — writing</title>
+  <style>
+    html, body { margin: 0; height: 100%; background: #f3f4f6; font-family: "Segoe UI", Arial, sans-serif; color: #1f2937; }
+    .wrap { display: grid; grid-template-columns: 1fr 380px; gap: 20px; padding: 20px; box-sizing: border-box; height: 100%; }
+    .cap { font-size: 15px; font-weight: 600; color: #374151; margin: 0 0 8px; display: flex; justify-content: space-between; }
+    .cap span:last-child { font-weight: 400; color: #6b7280; }
+    .pane { display: flex; flex-direction: column; min-height: 0; }
+    .editor { flex: 1; border: 1px solid #d1d5db; border-radius: 8px; background: #fff; display: flex; flex-direction: column; overflow: hidden; }
+    .bar { background: #f9fafb; border-bottom: 1px solid #e5e7eb; padding: 8px 12px; display: flex; align-items: center; gap: 8px; font-size: 13px; color: #6b7280; }
+    .bar .btn { width: 22px; height: 22px; border-radius: 4px; display: inline-flex; align-items: center; justify-content: center; }
+    .bar .btn img { width: 18px; height: 18px; }
+    .bar .btn.active { outline: 2px solid #0f766e; outline-offset: 1px; }
+    .bar .sp { width: 1px; height: 18px; background: #e5e7eb; margin: 0 4px; }
+    .bar .tip { margin-inline-start: auto; font-size: 12px; background: #111827; color: #fff; padding: 3px 8px; border-radius: 4px; }
+    .body { padding: 22px 24px; font-size: 18px; line-height: 1.65; }
+    .body p { margin: 0 0 10px; position: relative; padding: 8px 60px; border-radius: 6px; }
+    .body p[dir=rtl] { text-align: right; }
+    .body p.caret { background: #f0fdfa; }
+    .body .ins { display: inline-block; width: 1.5px; height: 1.15em; background: #111827; vertical-align: text-bottom; margin: 0 1px; }
+    .tag { position: absolute; top: 50%; transform: translateY(-50%); font-size: 11px; padding: 2px 7px; border-radius: 999px; color: #fff; background: #0f766e; letter-spacing: .3px; direction: ltr; }
+    p[dir=rtl] .tag { left: 10px; } p:not([dir=rtl]) .tag { right: 10px; background: #6b7280; }
+    .side { display: flex; flex-direction: column; gap: 14px; }
+    .card { background: #fff; border: 1px solid #d1d5db; border-radius: 8px; padding: 14px 16px; }
+    .card h3 { margin: 0 0 6px; font-size: 15px; color: #0f766e; }
+    .card p { margin: 0; font-size: 15px; color: #374151; line-height: 1.5; }
+    .card p.he { direction: rtl; text-align: right; margin-top: 6px; color: #6b7280; }
+    kbd { font: 12px/1 "Segoe UI", Arial, sans-serif; background: #f3f4f6; border: 1px solid #d1d5db; border-bottom-width: 2px; border-radius: 4px; padding: 2px 6px; white-space: nowrap; }
+    .icons { display: flex; gap: 14px; align-items: center; margin-top: 8px; font-size: 13px; color: #374151; }
+    .icons img { width: 20px; height: 20px; vertical-align: middle; margin-inline-end: 6px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="pane">
+      <div class="cap"><span>Writing: each paragraph on its own side</span><span>כתיבה: כל פסקה בצד שלה</span></div>
+      <div class="editor">
+        <div class="bar">
+          <span style="font-weight:600;color:#374151">Paragraph</span>
+          <span class="sp"></span>
+          <span><b>B</b></span><span><i>I</i></span><span><u>U</u></span>
+          <span class="sp"></span>
+          <span class="btn active"><img src="../../icons/lossmol.svg" alt=""></span>
+          <span class="tip">Right-to-left paragraph. Click for left-to-right</span>
+        </div>
+        <div class="body">
+          <p dir="rtl"><span class="tag">RTL</span>שלום דנה,</p>
+          <p dir="rtl" class="caret"><span class="tag">RTL</span>תודה על הסיכום. עברתי על לוח הזמנים המעודכן ואני מסכים עם הדחייה של שבוע; נעדכן את הצוות בפגישה הבאה.<span class="ins"></span></p>
+          <p dir="rtl"><span class="tag">RTL</span>שני דברים לפני יום שלישי: לסגור את מסמך האפיון, ולשלוח לכולם את ההזמנה לפגישת המעקב.</p>
+          <p><span class="tag">LTR</span>For the colleagues abroad: the English version of the schedule is attached, and the weekly call stays at 16:00 Israel time.</p>
+          <p dir="rtl"><span class="tag">RTL</span>אם משהו לא ברור, תכתבי לי ונדבר.</p>
+          <p dir="rtl"><span class="tag">RTL</span>בברכה,<br>יואב</p>
+        </div>
+      </div>
+    </div>
+    <div class="side">
+      <div class="card">
+        <h3>Automatic</h3>
+        <p>Mostly Hebrew or Arabic words: right to left. An English paragraph in the same message stays left to right. The direction is written into the message, so recipients see it too.</p>
+        <p class="he">רוב המילים בעברית או בערבית: מימין לשמאל. פסקה באנגלית באותה הודעה נשארת משמאל לימין.</p>
+      </div>
+      <div class="card">
+        <h3>By hand</h3>
+        <p><kbd>Ctrl</kbd> + right <kbd>Shift</kbd> makes the paragraph right-to-left, <kbd>Ctrl</kbd> + left <kbd>Shift</kbd> left-to-right, as in Word and Windows. Or click the button in the formatting toolbar.</p>
+        <p class="he">Ctrl + Shift ימני: מימין לשמאל. Ctrl + Shift שמאלי: משמאל לימין. כמו ב‑Word וב‑Windows.</p>
+      </div>
+      <div class="card">
+        <h3>The button shows where you are</h3>
+        <div class="icons">
+          <span><img src="../../icons/lossmol.svg" alt="">right-to-left</span>
+          <span><img src="../../icons/lossmol-ltr.svg" alt="">left-to-right</span>
+        </div>
+        <p class="he">הכפתור מראה את כיוון הפסקה שהסמן בה.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
